@@ -80,3 +80,78 @@ The disk image was mounted in a read-only state to ensure evidence integrity. Al
 documented and aligned with forensic best practices to ensure repeatability and reliability of findings.
 
 ---
+## Findings
+
+<div align="center">
+  <img width="985" height="555" alt="image" src="https://github.com/PramathYaji/Digital-Forensics-with-Incident-Response-Simulation/blob/main/images/Phishing%20Email%20from%20Spoofed%20Domain.png" />
+  <p><em>Fig 1. Phishing Email from a Spoofed Domain</em></p>
+</div>
+
+<div align="center">
+  <img width="985" height="555" alt="image" src="https://github.com/PramathYaji/Digital-Forensics-with-Incident-Response-Simulation/blob/main/images/Follow-Up%20Phishing%20Email%20with%20Exploit%20Instructions.png" />
+  <p><em>Fig 2. Follow-Up Phishing Email with Exploit Instructions</em></p>
+</div>
+
+## Steganographic Evidence
+
+<div align="center">
+  <img width="985" height="555" alt="image" src="https://github.com/PramathYaji/Digital-Forensics-with-Incident-Response-Simulation/blob/main/images/Initial%20Inspection%20of%20Image%20File%20Using%20strings%20Utility.png" />
+  <p><em>Fig 3. Initial Inspection of Image File Using strings Utility</em></p>
+</div>
+
+<div align="center">
+  <img alt="image" src="https://github.com/PramathYaji/Digital-Forensics-with-Incident-Response-Simulation/blob/main/images/Extracted%20Employee%20Data%20from%20Steganographic%20Image.png" />
+  <p><em>Fig 4. Extracted Employee Data from Steganographic Image</em></p>
+</div>
+
+---
+## Vulnerability Exploitation Evidence
+
+<div align="center">
+  <img alt="image" src="https://github.com/PramathYaji/Digital-Forensics-with-Incident-Response-Simulation/blob/main/images/SQL%20Injection%20Attempt.png" />
+  <p><em>Fig 5. SQL Injection Attempt</em></p>
+</div>
+
+<div align="center">
+  <img alt="image" src="https://github.com/PramathYaji/Digital-Forensics-with-Incident-Response-Simulation/blob/main/images/Successful%20Upload%20of%20a%20PHP%20Reverse%20Shell.png" />
+  <p><em>Fig 6. Successful Upload of PHP Reverse Shell</em></p>
+</div>
+
+<div align="center">
+  <img alt="image" src="https://github.com/PramathYaji/Digital-Forensics-with-Incident-Response-Simulation/blob/main/images/Evidence%20of%20Remote%20Root%20Shell%20Session.png" />
+  <p><em>Fig 7. Evidence of Remote Root Shell Session</em></p>
+</div>
+
+<div align="center">
+  <img alt="image" src="https://github.com/PramathYaji/Digital-Forensics-with-Incident-Response-Simulation/blob/main/images/Wireshark%20Capture%20Showing%20Privilege%20Escalation%20via%20vim.png" />
+  <p><em>Fig 7. Wireshark Capture Showing Privilege Escalation via vim</em></p>
+</div>
+
+<div align="center">
+  <img alt="image" src="https://github.com/PramathYaji/Digital-Forensics-with-Incident-Response-Simulation/blob/main/images/Reconnaissance%20in%20the%20HR%20Manager%E2%80%99s%20Directory.png" />
+  <p><em>Fig 8. Reconnaissance in HR Manager's Directory</em></p>
+</div>
+
+<div align="center">
+  <img alt="image" src="https://github.com/PramathYaji/Digital-Forensics-with-Incident-Response-Simulation/blob/main/images/Exfiltrating%20Data%20Through%20Python%20Server.png" />
+  <p><em>Fig 9. Exfiltrating Data Through Python Server</em></p>
+</div>
+
+---
+## Mitigation Steps
+
+To address the gaps identified during the simulation, the following general mitigation strategies are recommended:
+
+• Deliver ongoing, role-specific training to improve employee recognition of phishing, social engineering, and abnormal system behavior.
+
+• Regularly audit user permissions and privilege escalation pathways to ensure alignment with operational needs.
+
+• Identify and remediate web application flaws through secure development practices and vulnerability scans.
+
+• Utilize system and network monitoring to flag unusual activities, such as unsanctioned sudo changes, shell activity, and data movements.
+
+• Perform regular integrity checks on files like sudoers, and enforce hardened defaults for services exposed internally or externally.
+
+• Continue regular assessments to evaluate detection, response, and containment capabilities in evolving threat scenarios.
+
+---
