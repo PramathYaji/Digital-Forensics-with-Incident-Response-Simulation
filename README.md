@@ -34,53 +34,53 @@ The forensic investigation successfully reconstructed the complete attack timeli
 
 ```
 ┌─────────────────────────────────────────────────────────────────────┐
-│                         ATTACK TIMELINE                              │
+│                         ATTACK TIMELINE                             │
 ├─────────────────────────────────────────────────────────────────────┤
-│                                                                       │
-│  [1] Initial Compromise                                              │
+│                                                                     │
+│  [1] Initial Compromise                                             │
 │      └─ Phishing email from alerts@coinbbase.com                    │
-│         └─ Exposed crypto wallet private key                         │
-│            └─ Threat: "2 BTC transferred - comply or lose more"      │
-│                                                                       │
-│  [2] Insider Coercion Phase                                          │
-│      └─ Employee "faraz" accesses sensitive HR data                  │
-│         └─ Data transferred to personal directory                    │
-│            └─ Embedded in images using steganography                 │
-│                                                                       │
-│  [3] Second Phishing Email                                           │
-│      └─ Explicit instructions delivered                              │
-│         └─ "Introduce RFI vulnerability into HR portal"              │
-│            └─ "Ensure SQL injection is available"                    │
-│               └─ "Modify sudoers for daemon NOPASSWD vim"            │
-│                                                                       │
-│  [4] Vulnerability Introduction                                      │
-│      └─ Employee implements directed changes                         │
-│         └─ SQL Injection added to /employee_pro/login.php            │
-│            └─ RFI enabled in /employee_pro/upload.php                │
-│               └─ sudoers: daemon ALL=(ALL) NOPASSWD: /usr/bin/vim    │
-│                                                                       │
-│  [5] External Exploitation                                           │
-│      └─ Attacker exploits SQL injection                              │
-│         └─ Uploads PHP reverse shell via RFI                         │
-│            └─ Gains initial web shell access                         │
-│                                                                       │
-│  [6] Privilege Escalation                                            │
-│      └─ Escalates from www-data to daemon user                       │
-│         └─ Exploits vim sudo privilege                               │
-│            └─ :!bash spawns root shell                               │
-│               └─ Full system compromise achieved                     │
-│                                                                       │
-│  [7] Reconnaissance & Data Theft                                     │
-│      └─ Explores /home/hrmanager directory                           │
-│         └─ Identifies sensitive employee files                       │
-│            └─ Extracts encryption keys                               │
-│               └─ Decrypts archived HR data                           │
-│                                                                       │
-│  [8] Exfiltration                                                    │
-│      └─ Sets up Python HTTP server on port 9999                      │
-│         └─ Downloads compressed HR data                              │
-│            └─ Mission complete: SPII exfiltrated                     │
-│                                                                       │
+│         └─ Exposed crypto wallet private key                        │
+│            └─ Threat: "2 BTC transferred - comply or lose more"     │
+│                                                                     │
+│  [2] Insider Coercion Phase                                         │
+│      └─ Employee "faraz" accesses sensitive HR data                 │
+│         └─ Data transferred to personal directory                   │
+│            └─ Embedded in images using steganography                │
+│                                                                     │
+│  [3] Second Phishing Email                                          │
+│      └─ Explicit instructions delivered                             │
+│         └─ "Introduce RFI vulnerability into HR portal"             │
+│            └─ "Ensure SQL injection is available"                   │
+│               └─ "Modify sudoers for daemon NOPASSWD vim"           │
+│                                                                     │
+│  [4] Vulnerability Introduction                                     │
+│      └─ Employee implements directed changes                        │
+│         └─ SQL Injection added to /employee_pro/login.php           │
+│            └─ RFI enabled in /employee_pro/upload.php               │
+│               └─ sudoers: daemon ALL=(ALL) NOPASSWD: /usr/bin/vim   │
+│                                                                     │
+│  [5] External Exploitation                                          │
+│      └─ Attacker exploits SQL injection                             │
+│         └─ Uploads PHP reverse shell via RFI                        │
+│            └─ Gains initial web shell access                        │
+│                                                                     │
+│  [6] Privilege Escalation                                           │
+│      └─ Escalates from www-data to daemon user                      │
+│         └─ Exploits vim sudo privilege                              │
+│            └─ :!bash spawns root shell                              │
+│               └─ Full system compromise achieved                    │
+│                                                                     │
+│  [7] Reconnaissance & Data Theft                                    │
+│      └─ Explores /home/hrmanager directory                          │
+│         └─ Identifies sensitive employee files                      │
+│            └─ Extracts encryption keys                              │
+│               └─ Decrypts archived HR data                          │
+│                                                                     │
+│  [8] Exfiltration                                                   │
+│      └─ Sets up Python HTTP server on port 9999                     │
+│         └─ Downloads compressed HR data                             │
+│            └─ Mission complete: SPII exfiltrated                    │
+│                                                                     │
 └─────────────────────────────────────────────────────────────────────┘
 ```
 
